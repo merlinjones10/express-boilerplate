@@ -1,15 +1,14 @@
 import mongoose from 'mongoose'
-import config from "config"
+import config from 'config'
 
-async function connect(){
+async function connect() {
     const dbUri = config.get<string>('dbUri')
     try {
         await mongoose.connect(dbUri)
-        console.log('DB connected');
-        
+        console.log('DB connected')
     } catch (e) {
         console.warn('Err connecting to DB', e)
-    process.exit(1) 
+        process.exit(1)
     }
 }
 

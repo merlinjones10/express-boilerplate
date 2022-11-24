@@ -1,5 +1,5 @@
 export default {
-    port: 1337, 
+    port: 1337,
     dbUri: 'mongodb://localhost:27017/local',
     saltWorkFactor: 10,
 }
