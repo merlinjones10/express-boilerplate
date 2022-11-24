@@ -2,6 +2,8 @@ import mongoose from 'mongoose'
 import bcrypt from 'bcrypt'
 import config from 'config'
 
+// Schema +> Model +>
+// document is TS type
 export interface UserDocument extends mongoose.Document {
     email: string
     name: string
