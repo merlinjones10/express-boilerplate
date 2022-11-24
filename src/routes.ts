@@ -5,7 +5,8 @@ import { createUserSchema } from './schema/user.schema'
 
 function routes(app: Express) {
     app.get('/healthcheck', (req: Request, res: Response) => {
-        res.send(200)
+        console.log('Healthcheck')
+        res.sendStatus(200)
     })
     app.post(
         '/api/users',
